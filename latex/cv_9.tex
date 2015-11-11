@@ -1,0 +1,165 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+\usepackage{pbox}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Vicente \textsc{Cunha}}\bigskip\par} % Your name
+
+\section{Dados Pessoais}
+
+\begin{tabular}{rl}
+\textsc{Cidade e Data de Nascimento:} & Passo Fundo, RS  | 27 de novembro de 1993 \\
+\textsc{Endereço:} & Rua General Lima e Silva, 757, ap 709 \\ &Centro Histórico, Porto Alegre, RS \\
+\textsc{Telefone:} & (51) 8508 0998\\
+\textsc{email:} & \href{mailto:vicentecunha1@hotmail.com}{vicentecunha1@hotmail.com}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Experiência Profissional}
+
+\begin{tabular}{p{1.5cm}|p{12cm}}
+
+\pbox{20cm}{\emph{Atual}\\\textsc{Nov} 2014} & Estagiário na \textsc{T\&T (Tools and Technologies)}, Porto Alegre \\
+& \textbf{Projetos de Sistemas Embarcados}\\ 
+& \footnotesize{Desenvolvimento de \textit{firmware} em C++ para sistemas embarcados Linux e em C para microcontroladores 8051 e AVR. Projeto de \textit{hardware} para sistemas embarcados e \textit{layout} de PCIs com CadSoft EAGLE. Implementação de métodos de processamento de sinais digitais.}\\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Educação}
+
+\begin{tabular}{p{1.5cm}|p{12cm}}
+
+\pbox{20cm}{\emph{Atual} \\ \textsc{Jan} 2011} & Graduando em Engenharia Elétrica\\
+& \textbf{Universidade Federal do Rio Grande do Sul}\\
+& \small Semestre final (décimo)\\
+& \footnotesize{Projeto de Diplomação: ``Métodos de Segmentação Automática de sinais de EMG de Superfície para Classificação de Movimentos Utilizando RNAs''} \\
+& \small Orientador: Prof. Alexandre \textsc{Balbinot}\\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Bolsas e Certificados}
+
+\begin{tabular}{p{1.5cm}|p{12cm}}
+
+\pbox{20cm}{\textsc{Jul} 2014} & Prêmio Jovem Pesquisador - Ciências Exatas e da Terra \\
+&\textbf{XXVI Salão de Iniciação Científica da Ufrgs}\\
+& \footnotesize{Trabalho Apresentado: ``Referências de Tensão tipo \textit{sub-bandgap} sem uso de Resistores''}\\
+& \small Orientador: Prof. Hamilton \textsc{Klimach}\\
+\multicolumn{2}{c}{} \\
+
+\pbox{20cm}{\textsc{Jul} 2014 \\ \textsc{Ago} 2013} & Bolsista REUNI, \textbf{Laboratório de Microeletrônica do PGMICRO-UFRGS}\\
+& \footnotesize{Extração de parâmetros de variabilidade dos processos CMOS IBM 130 nm e XFAB 180 nm. Desenvolvimento de \textit{layouts} para circuitos de referência de tensão com Cadence Virtuoso.}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Dez} 2010 & \textit{Cambridge ESOL Level 3 Certificate in ESOL International}\\
+& \footnotesize{\textit{Grade A in the Certificate in Advanced English. Performance at Grade A demonstrates an ability at Level 3 of the UK National Qualifications Framework; and Council of Europe Level C2.}}\\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Outras Informações}
+
+\begin{tabular}{p{1.5cm}|p{12cm}}
+
+\pbox{20cm}{2013} & Presidente do Diretório Acadêmico da Engenharia Elétrica (DAELE-UFRGS) \\
+& \footnotesize{Atuação como representante discente no colegiado do Departamento de Engenharia Elétrica (DELET) e na Comissão de Graduação de Engenharia Elétrica (COMGRAD-ELE). Zelo pelo espaço físico do Diretório Acadêmico.}\\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Idiomas}
+
+\begin{tabular}{rl}
+\textsc{Inglês:} & Fluente \\
+\textsc{Português:} & Língua materna\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Conhecimentos de Informática}
+
+\begin{tabular}{rl}
+Conhecimento Básico: & VHDL, Cadence Virtuoso, NI LabVIEW\\
+Conhecimento Intermediário: & C, C++, Git, MATLAB, LaTeX, CadSoft Eagle  \\
+&\\
+& Habituado com sistemas operacionais Linux e Windows\\
+\end{tabular}
+
+
+\end{document}
